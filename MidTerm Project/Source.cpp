@@ -10,7 +10,7 @@ int main() {
 
 		cout << "\n\n do you want to calcilate";
 		cin >> choice;
-		cout << "\n" << "\n"
+		cout << "\n" << "\n";
 			if (choice == "no")
 			{
 				break;
@@ -23,25 +23,23 @@ int main() {
 			cout << "Enter the quantity: ";
 			cin >> quant;
 
-			cout << "Enter the sales rate:"
+			cout << "Enter the sales rate:";
 			cin >> salesRate;
 
 
 			totalCost = (price *quant) + salesRate;
 
 
-			if (quantity >= 10)
+			if (quant >= 10)
 			{
 				totalCost = totalCost + 0.2;
 			}
 			cout << "\n\n The total cost is = " << totalCost;
-			price++
+			price++;
 		} while (price <= 0);
 	} while (choice == "yes");
 	
 	return 0;
-	
-
 
 	
 }
